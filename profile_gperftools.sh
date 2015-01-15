@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# build the program
+# build the program; For our demo program, we specify -DWITHGPERFTOOLS to enable the gperftools specific #ifdefs
 g++ -std=c++11 -DWITHGPERFTOOLS -lprofiler -g cpuload.cpp -o cpuload
 
 # run the program; generates the profiling data file (profile.log in our example)
